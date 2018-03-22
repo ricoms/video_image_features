@@ -5,10 +5,10 @@ Repository for feature extraction from images and videos.
 A basic list of features this repository extracts:
 
 * Image features:
-  - Dense SIFT (Scale-invariant feature transform) - Patented
-  - SURF (Speeded-Up Robust Features) - Patented
+  - Dense SIFT (Scale-invariant feature transform) - Patented so NO!
+  - SURF (Speeded-Up Robust Features) - Patented so NO!
   - HoG (Histogram of Oriented Gradients) - OK!
-  - LBP (Local Binary Pattern)- OK!
+  - LBP (Local Binary Pattern) - OK!
   - GiST (Generalized Search Tree)
   - Color Histogram - OK!
   - Fc7layer from AlexNet or equivalent - (InceptionV3) OK!
