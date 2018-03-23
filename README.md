@@ -2,7 +2,7 @@
 
 Repository for feature extraction from images and videos.
 
-A basic list of features this repository extracts:
+A basic list of features this repository extracts and their references:
 
 * Image features:
   - Dense SIFT (Scale-invariant feature transform) - Patented so NO!
@@ -21,6 +21,8 @@ A basic list of features this repository extracts:
 * Video features:
   - C3D features - OK!
   - HMP (Histogram of Motion Patterns) - OK!
+    - ALMEIDA, Jurandy; LEITE, Neucimar J.; TORRES, Ricardo da S. Comparison of video sequences with histograms of motion patterns. In: **Image Processing (ICIP), 2011 18th IEEE International Conference on.** IEEE, 2011. p. 3673-3676.
+
 
 I used Python3.6 and OpenCV3.4.1_1 for this repository,
 both you will need to install.
