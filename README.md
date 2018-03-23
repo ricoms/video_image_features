@@ -5,9 +5,8 @@ Repository for feature extraction from images and videos.
 A basic list of features this repository extracts and their references:
 
 * Image features:
-  - Dense SIFT (Scale-invariant feature transform) - Patented so NO!
-  - SURF (Speeded-Up Robust Features) - Patented so NO!
   - HoG (Histogram of Oriented Gradients) - OK!
+    1. Dalal, N. and B. Triggs. **Histograms of Oriented Gradients for Human Detection**, IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Vol. 1 (June 2005), pp. 886–893.
   - LBP (Local Binary Pattern) - OK!
     1. DC. He and L. Wang (1990), **Texture Unit, Texture Spectrum, And Texture Analysis**, Geoscience and Remote Sensing, IEEE Transactions on, vol. 28, pp. 509 - 512.
   - GiST (Generalized Search Tree)
