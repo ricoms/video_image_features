@@ -9,6 +9,7 @@ A basic list of features this repository extracts and their references:
   - SURF (Speeded-Up Robust Features) - Patented so NO!
   - HoG (Histogram of Oriented Gradients) - OK!
   - LBP (Local Binary Pattern) - OK!
+    1. DC. He and L. Wang (1990), **Texture Unit, Texture Spectrum, And Texture Analysis**, Geoscience and Remote Sensing, IEEE Transactions on, vol. 28, pp. 509 - 512.
   - GiST (Generalized Search Tree)
   - Color Histogram - OK!
   - Fc7layer from InceptionV3(imagenet) - OK!
@@ -28,14 +29,17 @@ A basic list of features this repository extracts and their references:
     1. ALMEIDA, Jurandy; LEITE, Neucimar J.; TORRES, Ricardo da S. Comparison of video sequences with histograms of motion patterns. In: **Image Processing (ICIP), 2011 18th IEEE International Conference on**. IEEE, 2011. p. 3673-3676.
 
 
-I used Python3.6 and OpenCV3.4.1_1 for this repository,
-both you will need to install.
+
+I used Python3.6 and OpenCV3.4.1_1 for this repository.
 With those two installed, and working, you can use the *requirements.py* file for
 installing python packages with pip.
 
+Some other references:
+  OpenCV: BRADSKI, Gary; KAEHLER, Adrian. OpenCV. **Dr. Dobb’s journal of software tools**, v. 3, 2000.
+  scikit-image: VAN DER WALT, Stefan et al. **scikit-image: image processing in Python**. PeerJ, v. 2, p. e453, 2014.
 
-Special thanks to:
-* Bikramjot Singh Hanzra for http://hanzratech.in/2015/05/30/local-binary-patterns.html
+
+Special thanks to all involved in the publications cited here, they are helping change the world.
 
 Who dedicated themselves to publish technical knowledge and
 change the world.
