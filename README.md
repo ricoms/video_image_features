@@ -11,7 +11,8 @@ A basic list of features this repository extracts and their references:
   - LBP (Local Binary Pattern) - OK!
   - GiST (Generalized Search Tree)
   - Color Histogram - OK!
-  - Fc7layer from AlexNet or equivalent - (InceptionV3) OK!
+  - Fc7layer from InceptionV3(imagenet) - OK!
+    1. SZEGEDY, Christian et al. **Rethinking the inception architecture for computer vision**. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016. p. 2818-2826.
   - ORB (Oriented FAST and Rotated BRIEF): An efficient alternative to SIFT or SURF - OK!
     1. Ethan Rublee, Vincent Rabaud, Kurt Konolige, and Gary Bradski. **Orb: an efficient alternative to sift or surf**. In Computer Vision (ICCV), 2011 IEEE International Conference on, pages 2564–2571. IEEE, 2011.
 
