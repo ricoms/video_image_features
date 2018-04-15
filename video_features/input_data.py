@@ -58,7 +58,7 @@ def get_frames_data(filename, num_frames_per_clip=16):
   ret_arr = []
   fc = 0
   ret = True
-
+  s_index = random.randint(0, frameCount - num_frames_per_clip)
   while (fc < num_frames_per_clip and ret):
     ret, buf[fc] = cap.read()
     ret_arr.append(buf[fc])

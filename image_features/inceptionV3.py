@@ -3,7 +3,6 @@ import __folder_params
 import sys
 sys.path.insert(0, __folder_params.home)
 import utils
-from extract_features import FeatureExtractor
 
 from keras.applications import InceptionV3
 from keras.models import Sequential
@@ -17,7 +16,7 @@ def get_inceptionV3():
                         include_top=True,
                         input_shape=(227, 227, 3))
 
-def processDnn(batch_img_paths, model, input_shape = (227,227, 3)):
+def processDnn(batch_img_paths, model=get_inceptionV3(), input_shape = (227,227, 3)):
     batch_len = len(batch_img_paths)
     final_paths = []
     for img_path in batch_img_paths:
@@ -36,10 +35,11 @@ def processDnn(batch_img_paths, model, input_shape = (227,227, 3)):
             for i, v in enumerate(pred):
                 if v > 0:
                     f.write("%d:%e " % (i, v))
+            f.write("\n")
 
 if __name__ == "__main__":
     #FeatureExtractor("image", processInceptionV3).run()
-    a = FeatureExtractor("image", processDnn)
+    a = utils.FeatureExtractor("image", processDnn)
     images_paths = [i for i in a.data_iterator]
     batch = 32
 

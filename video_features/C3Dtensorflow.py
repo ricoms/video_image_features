@@ -30,7 +30,7 @@ import os.path
 import time
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
-import c3d_input_data
+import input_data
 import c3d_model
 import numpy as np
 
@@ -133,7 +133,7 @@ def run_test():
     # for this particular training step.
     start_time = time.time()
     test_images, next_start_pos, dirnames, valid_len = \
-            c3d_input_data.read_clip_and_label(
+            input_data.read_clip_and_label(
                     test_list_files,
                     FLAGS.batch_size * gpu_num,
                     start_pos=next_start_pos

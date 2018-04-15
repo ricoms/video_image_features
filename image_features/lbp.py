@@ -3,7 +3,6 @@ import __folder_params
 import sys
 sys.path.insert(0, __folder_params.home)
 import utils
-from extract_features import FeatureExtractor
 
 from skimage.feature import local_binary_pattern
 from scipy.stats import itemfreq
@@ -27,9 +26,10 @@ def processLBP(img_path, radius = 15):
     with open(final_path, 'w+') as f:
         for v in hist:
             f.write("%.8f " % (v))
+        f.write("\n")
 
 if __name__ == "__main__":
-    FeatureExtractor("image", processLBP).run()
+    utils.FeatureExtractor("image", processLBP).run()
     #a = FeatureExtractor("image", processLBP)
     #print(next(a.data_iterator))
     #processLBP(next(a.data_iterator))

@@ -36,7 +36,7 @@ installing python packages with pip.
 Some other references:
   OpenCV: BRADSKI, Gary; KAEHLER, Adrian. OpenCV. **Dr. Dobb’s journal of software tools**, v. 3, 2000.
   scikit-image: VAN DER WALT, Stefan et al. **scikit-image: image processing in Python**. PeerJ, v. 2, p. e453, 2014.
-
+  librosa: MCFEE, Brian et al. **librosa: Audio and music signal analysis in python**. In: Proceedings of the 14th python in science conference. 2015. p. 18-25.
 
 Special thanks to all involved in the publications cited here, they are helping change the world.
 

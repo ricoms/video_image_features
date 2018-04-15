@@ -1,2 +1,2 @@
-project_folder = '/media/ricoms/wk/2018Memorability/features_extraction/'
+project_folder = '/media/ricardo/wk/2018Memorability/video_image_features/'
 data_folder = project_folder+'../data/'
