@@ -26,7 +26,7 @@ A basic list of features this repository extracts and their references:
     1. D. Tran, L. Bourdev, R. Fergus, L. Torresani, and M. Paluri, **Learning Spatiotemporal Features with 3D Convolutional Networks**, ICCV 2015, PDF.
     2. Y. Jia, E. Shelhamer, J. Donahue, S. Karayev, J. Long, R. Girshick, S. Guadarrama, and T. Darrell, **Caffe: Convolutional Architecture for Fast Feature Embedding**, arXiv 2014.
     3. A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, **Large-scale Video Classification with Convolutional Neural Networks**, CVPR 2014.
-  - HMP (Histogram of Motion Patterns) - OK!
+  - HMP (Histogram of Motion Patterns) - OK! **Observation:** the code for extracting this feature is not available in this repository.
     1. ALMEIDA, Jurandy; LEITE, Neucimar J.; TORRES, Ricardo da S. Comparison of video sequences with histograms of motion patterns. In: **Image Processing (ICIP), 2011 18th IEEE International Conference on**. IEEE, 2011. p. 3673-3676.
 
 
