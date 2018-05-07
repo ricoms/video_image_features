@@ -53,13 +53,19 @@ Here is some explaining on the file format to access the featurer, how are they 
     3. Gradients calculated on 32x32 pixels per cell on a grey scale version of the image.
 
 * InceptionV3Imagenet - 
-    1. file format: text file
+    1. file format: text file.
     2. a single list of numbers in 1000 bins (InceptionV3 imagenet number of classes), if the class is equal to 0 the bin is omitted.
     3. Represents the activation of InceptionV3 1000 classes, trained on imagenet (object detection).
 
 * LBP - 
+    1. file format: text file.
+    2. a single list of numbers with the LBP values for patches of 8 * 15 pixels.
+    3. Represents the local texture of regions in the image.
 
 * ORB - 
+    1. file format: [pickle](https://docs.python.org/3/library/pickle.html).
+    2. contains a list of keypoints and desciptors.
+    3. [ORB](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_orb/py_orb.html) is basically a fusion of FAST keypoint detector and BRIEF descriptor with many modifications to enhance the performance.
 
 ## Videos
 
@@ -67,11 +73,25 @@ For video features there are two 'kind' of features, image features extracted on
 
 ### Image features on video
 
-These features were extracted on key-frames, three to be exact, the first, middle and last frames. And are:
+These features were extracted on key-frames, three to be exact, the first, middle and last frames. So there is three files for each video as described in the above **Images** section. These are:
+
+* ColorHistogram
+* Hog
+* InceptionV3Imagenet
+* LBP
+* ORB
 
 ### Video specialized features
 
-* HMP - 
+* HMP -
+    1. file format: text file.
+    2. a single list of numbers in 6075 bins
+    3. basically, represents the difference between one frame and the next.
+
+* C3D - 
+    1. file format: text file.
+    2. a single list of numbers
+    3. the outputs of the [C3D tensorflow model](https://github.com/hx173149/C3D-tensorflow)
 
 ## Sound
 
