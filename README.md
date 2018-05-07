@@ -4,6 +4,8 @@ Repository for feature extraction from images and videos.
 
 A basic list of features this repository extracts and their references:
 
+# Main references
+
 * Image features:
   - HoG (Histogram of Oriented Gradients) - OK!
     1. Dalal, N. and B. Triggs. **Histograms of Oriented Gradients for Human Detection**, IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Vol. 1 (June 2005), pp. 886–893.
@@ -17,7 +19,7 @@ A basic list of features this repository extracts and their references:
     1. Ethan Rublee, Vincent Rabaud, Kurt Konolige, and Gary Bradski. **Orb: an efficient alternative to sift or surf**. In Computer Vision (ICCV), 2011 IEEE International Conference on, pages 2564–2571. IEEE, 2011.
 
 * Audio features:
-  - MFCC (Mel Frequency Cepstral Coefficients) - There is no audio.
+  - MFCC (Mel Frequency Cepstral Coefficients) - To be implemented in future iterations. No audio for now.
 
 * Video features:
   - C3D features - OK!
@@ -28,17 +30,60 @@ A basic list of features this repository extracts and their references:
     1. ALMEIDA, Jurandy; LEITE, Neucimar J.; TORRES, Ricardo da S. Comparison of video sequences with histograms of motion patterns. In: **Image Processing (ICIP), 2011 18th IEEE International Conference on**. IEEE, 2011. p. 3673-3676.
 
 
+# Running the code
 
 I used Python3.6 and OpenCV3.4.1_1 for this repository.
 With those two installed, and working, you can use the *requirements.py* file for
 installing python packages with pip.
 
-Some other references:
+# Data format generated
+
+Here is some explaining on the file format to access the featurer, how are they organized and were extracted.
+
+## Images
+
+* ColorHistogram - 
+    1. file format: text file.
+    2. 3 list of numbers in 255 bins representing the colors Red, Green and Blue (in that order).
+    3. It's the sum of ocurrences of each value (or bin) for each color channel.
+
+* Hog - 
+    1. file format: text file.
+    2. a single list of numbers.
+    3. Gradients calculated on 32x32 pixels per cell on a grey scale version of the image.
+
+* InceptionV3Imagenet - 
+    1. file format: text file
+    2. a single list of numbers in 1000 bins (InceptionV3 imagenet number of classes), if the class is equal to 0 the bin is omitted.
+    3. Represents the activation of InceptionV3 1000 classes, trained on imagenet (object detection).
+
+* LBP - 
+
+* ORB - 
+
+## Videos
+
+For video features there are two 'kind' of features, image features extracted on key-frames and video specialized features.
+
+### Image features on video
+
+These features were extracted on key-frames, three to be exact, the first, middle and last frames. And are:
+
+### Video specialized features
+
+* HMP - 
+
+## Sound
+
+No sound features were extracted as the videos does not contain sound.
+
+# Some other references:
+
   OpenCV: BRADSKI, Gary; KAEHLER, Adrian. OpenCV. **Dr. Dobb’s journal of software tools**, v. 3, 2000.
   scikit-image: VAN DER WALT, Stefan et al. **scikit-image: image processing in Python**. PeerJ, v. 2, p. e453, 2014.
   librosa: MCFEE, Brian et al. **librosa: Audio and music signal analysis in python**. In: Proceedings of the 14th python in science conference. 2015. p. 18-25.
 
 Special thanks to all involved in the publications cited here, they are helping change the world.
 
-Who dedicated themselves to publish technical knowledge and
-change the world.
+
+003381586587
