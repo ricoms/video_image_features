@@ -105,5 +105,3 @@ No sound features were extracted as the videos does not contain sound.
 
 Special thanks to all involved in the publications cited here, they are helping change the world.
 
-
-003381586587
